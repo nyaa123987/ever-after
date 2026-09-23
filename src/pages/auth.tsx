@@ -166,8 +166,11 @@ export default function Auth() {
         return;
       }
 
-      console.log('USER ID FROM AUTH:', user.id);
-      console.log('WEDDING OWNER ID:', user.id);
+      console.log('========== WEDDING DEBUG ==========');
+      console.log('USER:', user);
+      console.log('USER ID:', user.id);
+      console.log('EMAIL:', user.email);
+      console.log('===================================');
 
       // Upsert instead of insert: safe to re-submit if a previous attempt
       // got interrupted after the profile was saved but before the wedding
